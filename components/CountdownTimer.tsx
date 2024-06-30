@@ -1,8 +1,8 @@
-"use client";
+'use client';
 // CountdownTimer.tsx
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
-const targetDate = new Date("2024-10-07T00:00:00Z"); // Define the target date and time in UTC
+const targetDate = new Date('2024-10-07T00:00:00Z'); // Define the target date and time in UTC
 
 const CountdownTimer: React.FC = () => {
   const [timeLeft, setTimeLeft] = useState(getTimeLeft());
@@ -31,7 +31,7 @@ const CountdownTimer: React.FC = () => {
   }, []);
 
   return (
-    <div className="countdown-timer inline-flex sm:gap-5   border-2 border-background px-5 sm:px-20 py-5 text-background">
+    <div className="countdown-timer inline-flex sm:gap-5 mx-auto border-2 border-primary px-5 sm:px-20 py-5 text-primary">
       <DisplayDiv duration={timeLeft.days} durationType="Days(s)" />:
       <DisplayDiv duration={timeLeft.hours} durationType="Hour(s)" />:
       <DisplayDiv duration={timeLeft.minutes} durationType="Minute(s)" />:

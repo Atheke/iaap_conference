@@ -1,3 +1,41 @@
 {
-  "extends": "next/core-web-vitals"
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint/eslint-plugin"],
+
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "globals": {
+    "React": "readonly"
+  },
+  "rules": {
+    "@typescript-eslint/interface-name-prefix": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "no-console": "off",
+    "react/jsx-sort-props": [
+      2,
+      {
+        "callbacksLast": true,
+        "shorthandFirst": false,
+        "shorthandLast": true,
+        "ignoreCase": true,
+        "noSortAlphabetically": false
+      }
+    ]
+  },
+  "indent": "off",
+  "@typescript-eslint/indext": ["error", 2],
+  "simple-import-sort/imports": "error",
+  "sort-keys": [
+    "error",
+    "asc",
+    { "caseSensitive": true, "natural": false, "minKeys": 2 }
+  ]
 }
