@@ -1,7 +1,6 @@
 'use client';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import CountdownTimer from '@/components/CountdownTimer';
 import { useRouter } from 'next/navigation';
 
 export default function Home() {
@@ -19,12 +18,12 @@ export default function Home() {
   return (
     <div className="relative w-full flex flex-col items-center justify-center gap-10">
       <Image
-        src="/bg1.jpg"
         alt="Hero Background"
-        fill
+        className=" -z-10 opacity-90"
         objectFit="cover"
         objectPosition="center"
-        className=" -z-10 opacity-90"
+        src="/bg1.jpg"
+        fill
       />
       <div className="pb-10 md:pb-5">
         <h1 className="text-2xl sm:text-4xl md:text-7xl lg:text-8xl font-bold text-background">
@@ -38,7 +37,7 @@ export default function Home() {
         </p>
       </div>
       <div className="inline-flex gap-5 w-full items-center justify-center mb-5">
-        <Button onClick={() => handleRegister()} className="shadow-lg">
+        <Button className="shadow-lg" onClick={() => handleRegister()}>
           Register
         </Button>
         <Button variant="outline" onClick={() => handleKnowMoreClick()}>

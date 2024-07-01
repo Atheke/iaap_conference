@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link href="/favicon.ico" rel="icon" sizes="any" />
       </head>
       <body
         className={cn(
@@ -36,10 +36,10 @@ export default function RootLayout({
           <header className="flex w-full items-center justify-start gap-52 py-5">
             <div className="inline-flex items-center space-x-5">
               <Image
-                src={'/NU-logo-transformed.png'}
                 alt="nagaland university logo"
-                width={40}
                 height={40}
+                src={'/NU-logo-transformed.png'}
+                width={40}
               />
               <h3 className="font-semibold">IAAP Conference</h3>
             </div>

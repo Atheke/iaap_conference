@@ -33,14 +33,14 @@ const AboutUs = () => {
         </section>
         <div className="flex-grow overflow-hidden rounded-md relative w-full">
           <Image
-            src="/bg3.jpg"
             alt="naga woman image"
-            objectFit="cover"
-            fill
-            objectPosition="left"
             className={
               'h-auto w-full object-cover transition-all hover:scale-105 aspect-square'
             }
+            objectFit="cover"
+            objectPosition="left"
+            src="/bg3.jpg"
+            fill
           />
         </div>
       </div>

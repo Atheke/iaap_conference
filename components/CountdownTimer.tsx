@@ -1,5 +1,4 @@
 'use client';
-// CountdownTimer.tsx
 import React, { useEffect, useState } from 'react';
 
 const targetDate = new Date('2024-10-07T00:00:00Z'); // Define the target date and time in UTC

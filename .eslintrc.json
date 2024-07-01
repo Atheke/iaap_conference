@@ -20,7 +20,7 @@
     "@typescript-eslint/no-explicit-any": "off",
     "no-console": "off",
     "react/jsx-sort-props": [
-      2,
+      "error",
       {
         "callbacksLast": true,
         "shorthandFirst": false,
@@ -30,12 +30,5 @@
       }
     ]
   },
-  "indent": "off",
-  "@typescript-eslint/indext": ["error", 2],
-  "simple-import-sort/imports": "error",
-  "sort-keys": [
-    "error",
-    "asc",
-    { "caseSensitive": true, "natural": false, "minKeys": 2 }
-  ]
+  "ignorePatterns": ["node_modules/", ".next/"]
 }
