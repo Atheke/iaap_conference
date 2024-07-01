@@ -64,13 +64,26 @@
     --input: 0 0% 14.9%;
     --ring: 0 0% 83.1%;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
+
+  html,
   body {
-    @apply bg-background text-foreground;
+    @apply h-full;
+    margin: 0;
+  }
+
+  body {
+    @apply bg-background text-foreground flex flex-col;
+  }
+
+  #__next {
+    @apply flex flex-col min-h-screen;
+  }
+
+  main {
+    @apply flex-1;
   }
 }

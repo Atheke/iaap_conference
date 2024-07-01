@@ -3,11 +3,11 @@ import Image from 'next/image';
 
 const AboutUs = () => {
   return (
-    <div className="w-full flex flex-col items-center justify-center gap-10 container mt-20">
-      <div className="flex justify-between gap-5">
-        <section className="w-1/2 flex-shrink-0">
-          <h3>Nagaland</h3>
-          <p>
+    <div className="w-full flex flex-col items-center justify-center gap-10 container my-10">
+      <div className="flex justify-between gap-10">
+        <section className="w-1/2">
+          <h2 className="text-3xl font-bold mb-4">Nagaland</h2>
+          <p className="text-lg">
             The state of Nagaland was formally inaugurated on December 1st,
             1963, as the 16th state of the Indian Union. It is bordered by Assam
             in the west, Myanmar (Burma) on the east, Arunachal Pradesh and part
@@ -18,29 +18,36 @@ const AboutUs = () => {
             via oral tradition. Music is an integral part of life here, with
             folk songs honoring ancestors, warriors, traditional heroes, and
             ancient tragic love stories. Gospel songs and modern tunes are also
-            part of the musical landscape. - Area: 16,579 square kilometers
-            (6,401 sq mi) - State Capital: Kohima (1,444.12 m above sea level) -
-            Population: 1,978,502 persons (2011 Census of India) - Largest
-            Village: Kohima Village - Official Language: English - Average
-            Rainfall: 1800-2500 mm - Highest Peak: Saramati peak, Kiphire
-            District (3,840 m) - Commercial Centre: Dimapur - Tribes: Angami,
-            Ao, Chakhesang, Chang, Kachari, Khiamniungan, Konyak, Kuki, Lotha,
-            Phom, Pochury, Rengma, Sangtam, Sumi, Tikhir, Yimkhiung, Zeliang -
-            Districts: Chumoukedima, Dimapur, Kiphire, Kohima, Longleng,
-            Mokokchung, Mon, Niuland, Noklak, Peren, Phek, Shamator, Tseminyu,
-            Tuensang, Wokha, Zunheboto
+            part of the musical landscape.
           </p>
+          <ul className="mt-4 list-disc list-inside text-lg">
+            <li>Area: 16,579 square kilometers (6,401 sq mi)</li>
+            <li>State Capital: Kohima (1,444.12 m above sea level)</li>
+            <li>Population: 1,978,502 persons (2011 Census of India)</li>
+            <li>Largest Village: Kohima Village</li>
+            <li>Official Language: English</li>
+            <li>Average Rainfall: 1800-2500 mm</li>
+            <li>Highest Peak: Saramati peak, Kiphire District (3,840 m)</li>
+            <li>Commercial Centre: Dimapur</li>
+            <li>
+              Tribes: Angami, Ao, Chakhesang, Chang, Kachari, Khiamniungan,
+              Konyak, Kuki, Lotha, Phom, Pochury, Rengma, Sangtam, Sumi, Tikhir,
+              Yimkhiung, Zeliang
+            </li>
+            <li>
+              Districts: Chumoukedima, Dimapur, Kiphire, Kohima, Longleng,
+              Mokokchung, Mon, Niuland, Noklak, Peren, Phek, Shamator, Tseminyu,
+              Tuensang, Wokha, Zunheboto
+            </li>
+          </ul>
         </section>
-        <div className="flex-grow overflow-hidden rounded-md relative w-full">
+        <div className="flex-grow rounded-md overflow-hidden relative">
           <Image
             alt="naga woman image"
-            className={
-              'h-auto w-full object-cover transition-all hover:scale-105 aspect-square'
-            }
+            className="transition-all hover:scale-105"
+            layout="fill"
             objectFit="cover"
-            objectPosition="left"
-            src="/bg3.jpg"
-            fill
+            src={'/bg3.jpg'}
           />
         </div>
       </div>
