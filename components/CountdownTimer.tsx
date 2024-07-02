@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 
-const targetDate = new Date('2024-10-07T00:00:00Z'); // Define the target date and time in UTC
+const targetDate = new Date('2025-01-03T00:00:00Z'); // Define the target date and time in UTC
 
 const CountdownTimer: React.FC = () => {
   const [timeLeft, setTimeLeft] = useState(getTimeLeft());
