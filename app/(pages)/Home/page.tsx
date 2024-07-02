@@ -16,7 +16,7 @@ export default function Home() {
     );
   };
   return (
-    <div className="relative w-full flex flex-col items-center justify-center gap-10">
+    <div className="relative w-full flex flex-col items-center justify-center gap-10 container">
       <Image
         alt="Hero Background"
         className=" -z-10 opacity-90"
@@ -25,7 +25,7 @@ export default function Home() {
         src="/bg1.jpg"
         fill
       />
-      <div className="pb-10 md:pb-5">
+      <div className="pb-10 sm:pd-1 md:pb-5 pt-10">
         <h1 className="text-2xl sm:text-4xl md:text-7xl lg:text-8xl font-bold text-background">
           <span className="text-base sm:text-xl md:text-5xl lg:text-6xl">
             Welcome to
@@ -37,10 +37,18 @@ export default function Home() {
         </p>
       </div>
       <div className="inline-flex gap-5 w-full items-center justify-center mb-5">
-        <Button className="shadow-lg" onClick={() => handleRegister()}>
+        <Button
+          className="shadow-lg"
+          size={'sm'}
+          onClick={() => handleRegister()}
+        >
           Register
         </Button>
-        <Button variant="outline" onClick={() => handleKnowMoreClick()}>
+        <Button
+          size={'sm'}
+          variant="outline"
+          onClick={() => handleKnowMoreClick()}
+        >
           Know More
         </Button>
       </div>

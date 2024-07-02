@@ -3,11 +3,11 @@ import Image from 'next/image';
 
 const AboutUs = () => {
   return (
-    <div className="w-full flex flex-col items-center justify-center gap-10 container my-10">
-      <div className="flex justify-between gap-10">
-        <section className="w-1/2">
+    <div className="w-full sm:my-10 container">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <section className="text-sm sm:text-base lg:text-lg ">
           <h2 className="text-3xl font-bold mb-4">Nagaland</h2>
-          <p className="text-lg">
+          <p className="">
             The state of Nagaland was formally inaugurated on December 1st,
             1963, as the 16th state of the Indian Union. It is bordered by Assam
             in the west, Myanmar (Burma) on the east, Arunachal Pradesh and part
@@ -20,7 +20,7 @@ const AboutUs = () => {
             ancient tragic love stories. Gospel songs and modern tunes are also
             part of the musical landscape.
           </p>
-          <ul className="mt-4 list-disc list-inside text-lg">
+          <ul className="mt-4 list-disc list-inside">
             <li>Area: 16,579 square kilometers (6,401 sq mi)</li>
             <li>State Capital: Kohima (1,444.12 m above sea level)</li>
             <li>Population: 1,978,502 persons (2011 Census of India)</li>
@@ -41,7 +41,7 @@ const AboutUs = () => {
             </li>
           </ul>
         </section>
-        <div className="flex-grow rounded-md overflow-hidden relative">
+        <div className="hidden lg:block rounded-md overflow-hidden relative shadow-lg">
           <Image
             alt="naga woman image"
             className="transition-all hover:scale-105"

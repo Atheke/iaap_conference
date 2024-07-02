@@ -33,8 +33,8 @@ export default function RootLayout({
           'min-h-screen bg-background font-sans antialiased'
         )}
       >
-        <main className="min-h-screen flex flex-col items-center container">
-          <header className="flex w-full items-center justify-start gap-52 py-5">
+        <main className="min-h-screen flex flex-col">
+          <header className="flex w-full items-center justify-start gap-52 py-5 container">
             <Link href="/">
               <div className="inline-flex items-center space-x-5">
                 <Image
@@ -51,7 +51,7 @@ export default function RootLayout({
               <Link href={'/about'}>About Us</Link>
             </nav>
           </header>
-          <div className="flex-1 flex flex-col items-center container px-0">
+          <div className="flex-1 flex flex-col items-center px-0">
             {children}
           </div>
           <Footer />
