@@ -30,7 +30,7 @@ const CountdownTimer: React.FC = () => {
   }, []);
 
   return (
-    <div className="countdown-timer inline-flex sm:gap-5 mx-auto border-2 border-primary px-5 sm:px-20 py-5 text-primary">
+    <div className="countdown-timer inline-flex gap-5 mx-auto border-2 border-primary px-5 sm:px-20 py-5 text-primary">
       <DisplayDiv duration={timeLeft.days} durationType="Days(s)" />:
       <DisplayDiv duration={timeLeft.hours} durationType="Hour(s)" />:
       <DisplayDiv duration={timeLeft.minutes} durationType="Minute(s)" />:

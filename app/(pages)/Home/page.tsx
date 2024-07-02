@@ -16,7 +16,7 @@ export default function Home() {
     );
   };
   return (
-    <div className="relative w-full flex flex-col items-center justify-center gap-10 container">
+    <div className="relative w-full flex flex-col items-center justify-center gap-5 sm:gap-10 container">
       <Image
         alt="Hero Background"
         className=" -z-10 opacity-90"
@@ -25,8 +25,8 @@ export default function Home() {
         src="/bg1.jpg"
         fill
       />
-      <div className="pb-10 sm:pd-1 md:pb-5 pt-10">
-        <h1 className="text-2xl sm:text-4xl md:text-7xl lg:text-8xl font-bold text-background">
+      <div className="sm:pd-1 md:pb-5 sm:pt-10">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold sm:font-bold text-background">
           <span className="text-base sm:text-xl md:text-5xl lg:text-6xl">
             Welcome to
           </span>
