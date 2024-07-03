@@ -37,16 +37,13 @@ export default function Home() {
         </p>
       </div>
       <div className="inline-flex gap-5 w-full items-center justify-center mb-5">
-        <Button
-          className="shadow-lg"
-          size={'sm'}
-          onClick={() => handleRegister()}
-        >
+        <Button size={'sm'} variant="outline" onClick={() => handleRegister()}>
           Register
         </Button>
         <Button
+          className="shadow-lg"
           size={'sm'}
-          variant="outline"
+          variant="default"
           onClick={() => handleKnowMoreClick()}
         >
           Know More
