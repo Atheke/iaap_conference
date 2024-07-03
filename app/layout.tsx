@@ -13,7 +13,7 @@ const Josefin = Josefin_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'iaap conference',
+  title: 'IAAP Conference 2025',
   description: 'iaap conference, nagaland university website',
 };
 
