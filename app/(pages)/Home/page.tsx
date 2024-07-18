@@ -33,7 +33,7 @@ export default function Home() {
           <br /> IAAP CONFERENCE
         </h1>
         <p className="mt-5 text-background">
-          February 3rd - 5th 2025, Kohima, Nagaland
+          26<sup>th</sup> - 28<sup>th</sup> February 2025, Kohima, Nagaland
         </p>
       </div>
       <div className="inline-flex gap-5 w-full items-center justify-center mb-5">
