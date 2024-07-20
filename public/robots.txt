@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.iaapconference.com/about/sitemap.xml
+Sitemap: https://www.iaapconference.com/sitemap.xml
