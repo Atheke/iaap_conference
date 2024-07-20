@@ -1,7 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  generateStaticParams: () => [],
-  generateStaticPaths: () => ({ paths: [], fallback: 'blocking' }),
-};
+const nextConfig = {};
 
 export default nextConfig;
