@@ -1,5 +1,5 @@
 import CountdownTimer from '@/components/CountdownTimer';
-import Home from './(pages)/home/page';
+import Home from './(pages)/Home/page';
 
 export default function App() {
   return (

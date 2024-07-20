@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import Footer from '../components/Footer/Footer';
 import EventStructuredData from '@/components/EventStructuredData';
-import { metadata } from './(pages)/home/metadata';
+import { metadata } from './(pages)/Home/metadata';
 
 export { metadata };
 
