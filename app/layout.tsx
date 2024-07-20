@@ -4,7 +4,8 @@ import './globals.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
-import Footer from './../components/Footer/Footer';
+import Footer from '../components/Footer/Footer';
+import EventStructuredData from '@/components/EventStructuredData';
 
 const Josefin = Josefin_Sans({
   subsets: ['latin'],
@@ -14,7 +15,23 @@ const Josefin = Josefin_Sans({
 
 export const metadata: Metadata = {
   title: 'IAAP Conference 2025',
-  description: 'iaap conference, nagaland university website',
+  description: 'IAAP conference, Nagaland University website',
+  keywords: 'IAAP, conference, Nagaland University, 2025',
+  openGraph: {
+    title: 'IAAP Conference 2025',
+    description: 'Join us for the IAAP Conference 2025 at Nagaland University',
+    url: 'https://www.iaapconference.com',
+    siteName: 'IAAP Conference 2025',
+    images: [
+      {
+        url: '/NU-logo-transformed.png',
+        width: 630,
+        height: 630,
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({
@@ -26,6 +43,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link href="/favicon.ico" rel="icon" sizes="any" />
+        <EventStructuredData />
       </head>
       <body
         className={cn(
