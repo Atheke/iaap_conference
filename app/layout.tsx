@@ -15,27 +15,6 @@ const Josefin = Josefin_Sans({
   display: 'swap',
 });
 
-// export const metadata: Metadata = {
-//   title: 'IAAP Conference 2025',
-//   description: 'IAAP conference, Nagaland University website',
-//   keywords: 'IAAP, conference, Nagaland University, 2025',
-//   openGraph: {
-//     title: 'IAAP Conference 2025',
-//     description: 'Join us for the IAAP Conference 2025 at Nagaland University',
-//     url: 'https://www.iaapconference.com',
-//     siteName: 'IAAP Conference 2025',
-//     images: [
-//       {
-//         url: '/NU-logo-transformed.png',
-//         width: 630,
-//         height: 630,
-//       },
-//     ],
-//     locale: 'en_US',
-//     type: 'website',
-//   },
-// };
-
 export default function RootLayout({
   children,
 }: Readonly<{
