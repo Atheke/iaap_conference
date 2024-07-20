@@ -1,4 +1,3 @@
-import type { Metadata } from 'next';
 import { Josefin_Sans } from 'next/font/google';
 import './globals.css';
 import Link from 'next/link';
@@ -6,6 +5,9 @@ import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import Footer from '../components/Footer/Footer';
 import EventStructuredData from '@/components/EventStructuredData';
+import { metadata } from './(pages)/Home/metadata';
+
+export { metadata };
 
 const Josefin = Josefin_Sans({
   subsets: ['latin'],
@@ -13,26 +15,26 @@ const Josefin = Josefin_Sans({
   display: 'swap',
 });
 
-export const metadata: Metadata = {
-  title: 'IAAP Conference 2025',
-  description: 'IAAP conference, Nagaland University website',
-  keywords: 'IAAP, conference, Nagaland University, 2025',
-  openGraph: {
-    title: 'IAAP Conference 2025',
-    description: 'Join us for the IAAP Conference 2025 at Nagaland University',
-    url: 'https://www.iaapconference.com',
-    siteName: 'IAAP Conference 2025',
-    images: [
-      {
-        url: '/NU-logo-transformed.png',
-        width: 630,
-        height: 630,
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
-  },
-};
+// export const metadata: Metadata = {
+//   title: 'IAAP Conference 2025',
+//   description: 'IAAP conference, Nagaland University website',
+//   keywords: 'IAAP, conference, Nagaland University, 2025',
+//   openGraph: {
+//     title: 'IAAP Conference 2025',
+//     description: 'Join us for the IAAP Conference 2025 at Nagaland University',
+//     url: 'https://www.iaapconference.com',
+//     siteName: 'IAAP Conference 2025',
+//     images: [
+//       {
+//         url: '/NU-logo-transformed.png',
+//         width: 630,
+//         height: 630,
+//       },
+//     ],
+//     locale: 'en_US',
+//     type: 'website',
+//   },
+// };
 
 export default function RootLayout({
   children,
