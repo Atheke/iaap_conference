@@ -6,6 +6,8 @@ import { cn } from '@/lib/utils';
 import Footer from '../components/Footer/Footer';
 import EventStructuredData from '@/components/EventStructuredData';
 import { metadata } from './(pages)/Home/metadata';
+import NotificationSection from '@/components/NotificationSection/NotificationSection';
+import { notifications } from '@/components/NotificationSection/Notifications';
 
 export { metadata };
 
@@ -52,6 +54,9 @@ export default function RootLayout({
           </header>
           <div className="flex-1 flex flex-col items-center px-0">
             {children}
+          </div>
+          <div>
+            <NotificationSection notifications={notifications} />
           </div>
           <Footer />
         </main>
