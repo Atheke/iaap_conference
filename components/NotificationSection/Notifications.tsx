@@ -1,7 +1,7 @@
 export const notifications = [
   {
     text: '- First Announcement - IAAP Conference. ',
-    linkText: 'Click to download details.',
+    linkText: 'Click to download Brochure.',
     link: 'https://drive.google.com/file/d/1qbUoBk0dA-SDq5E3fAL58jMideaeVSYU/view?usp=sharing',
   },
   {
