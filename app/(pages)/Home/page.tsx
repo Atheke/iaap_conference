@@ -16,16 +16,16 @@ export default function Home() {
     );
   };
   return (
-    <div className="relative w-full flex flex-col items-center justify-center gap-5 sm:gap-10 container">
+    <div className="relative w-full h-[90vh] flex flex-col items-center justify-center gap-5 sm:gap-10 container">
       <Image
         alt="Hero Background"
         className=" -z-10 opacity-90"
         objectFit="cover"
-        objectPosition="center"
-        src="/bg1.jpg"
+        objectPosition="bottom"
+        src="/hero-cover.jpg"
         fill
       />
-      <div className="sm:pd-1 md:pb-5 sm:pt-10">
+      <div className="sm:pd-1 md:pb-10 sm:pt-0">
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold sm:font-bold text-background">
           <span className="text-base sm:text-xl md:text-5xl lg:text-6xl">
             Welcome to
@@ -36,7 +36,7 @@ export default function Home() {
           26<sup>th</sup> - 28<sup>th</sup> February 2025, Kohima, Nagaland
         </p>
       </div>
-      <div className="inline-flex gap-5 w-full items-center justify-center mb-5">
+      <div className="inline-flex gap-5 w-full items-center justify-center mb-10">
         <Button size={'sm'} variant="outline" onClick={() => handleRegister()}>
           Register
         </Button>
