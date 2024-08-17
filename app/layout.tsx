@@ -8,6 +8,8 @@ import EventStructuredData from '@/components/EventStructuredData';
 import { metadata } from './(pages)/Home/metadata';
 import NotificationSection from '@/components/NotificationSection/NotificationSection';
 import { notifications } from '@/components/NotificationSection/Notifications';
+import AwardSection from '../components/AwardSection/AwardSection';
+import { awards } from '../components/AwardSection/AwardSectionProps';
 
 export { metadata };
 
@@ -57,6 +59,9 @@ export default function RootLayout({
           </div>
           <div>
             <NotificationSection notifications={notifications} />
+          </div>
+          <div>
+            <AwardSection awards={awards} />
           </div>
           <Footer />
         </main>

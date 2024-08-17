@@ -14,16 +14,18 @@ const NotificationSection: React.FC<NotificationSectionProps> = ({
   notifications,
 }) => {
   return (
-    <div className="container mx-auto px-1 py-5">
-      <div className="px-10 py-8 bg-gray-100 border border-gray-200 rounded-lg shadow-md">
-        <h2 className="text-xl font-semibold mb-4">Latest Updates:</h2>
-        <ul className="list-none p-0">
+    <div className="container mx-auto px-4 py-6">
+      <div className="bg-white border border-gray-300 rounded-lg shadow-lg p-6">
+        <h2 className="text-2xl font-bold mb-4 text-gray-800">
+          Latest Updates:
+        </h2>
+        <ul className="list-disc pl-5 text-gray-700">
           {notifications.map((notification, index) => (
-            <li className="mb-2" key={index}>
+            <li className="mb-3" key={index}>
               {notification.text}
               {notification.link && (
                 <a
-                  className="text-blue-600 hover:underline"
+                  className="text-blue-500 hover:underline"
                   href={notification.link}
                   rel="noopener noreferrer"
                   target="_blank"
@@ -38,4 +40,5 @@ const NotificationSection: React.FC<NotificationSectionProps> = ({
     </div>
   );
 };
+
 export default NotificationSection;
