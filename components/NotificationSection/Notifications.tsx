@@ -7,6 +7,6 @@ export const notifications = [
   {
     text: 'Details for the conference. ',
     linkText: 'Click to download Flyer.',
-    link: 'https://docs.google.com/document/d/1kREq1KzfeSLHF1-fnew-6tSij911A-Jq/edit?usp=sharing&ouid=116439849925061868491&rtpof=true&sd=true',
+    link: 'https://drive.google.com/file/d/1_FGgZxu25z8RTU7RTAAqLWoKLW_umW0c/view?usp=sharing',
   },
 ];
