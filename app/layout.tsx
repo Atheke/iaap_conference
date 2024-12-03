@@ -52,8 +52,12 @@ export default function RootLayout({
             <nav className="hidden sm:block space-x-20">
               <Link href={'/'}>Home</Link>
               <Link href={'/about'}>About Us</Link>
-							<Link href={'/notify'} 
-							className="font-bold bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 bg-clip-text text-transparent animate-blink">Notification</Link>
+							<Link 
+								className="font-bold bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 bg-clip-text text-transparent animate-blink"
+								href={'/notify'} >
+								Notification
+							</Link>
+
             </nav>
           </header>
           <div className="flex-1 flex flex-col items-center px-0">
