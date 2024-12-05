@@ -10,7 +10,7 @@ import NotificationSection from '@/components/NotificationSection/NotificationSe
 import { notifications } from '@/components/NotificationSection/Notifications';
 import AwardSection from '../components/AwardSection/AwardSection';
 import { awards } from '../components/AwardSection/AwardSectionProps';
-
+import Navbar from '../components/Navbar/navbar';
 export { metadata };
 
 const Josefin = Josefin_Sans({
@@ -49,16 +49,7 @@ export default function RootLayout({
                 <h3 className="font-semibold">IAAP Conference</h3>
               </div>
             </Link>
-            <nav className="hidden sm:block space-x-20">
-              <Link href={'/'}>Home</Link>
-              <Link href={'/about'}>About Us</Link>
-							<Link 
-								className="font-bold bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 bg-clip-text text-transparent animate-blink"
-								href={'/notify'} >
-								Notification
-							</Link>
-
-            </nav>
+            						<Navbar />
           </header>
           <div className="flex-1 flex flex-col items-center px-0">
             {children}
