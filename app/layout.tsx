@@ -10,7 +10,7 @@ import NotificationSection from '@/components/NotificationSection/NotificationSe
 import { notifications } from '@/components/NotificationSection/Notifications';
 import AwardSection from '../components/AwardSection/AwardSection';
 import { awards } from '../components/AwardSection/AwardSectionProps';
-import Navbar from '../components/Navbar/navbar';
+import Navbar from '../components/Navbar/Navbar';
 export { metadata };
 
 const Josefin = Josefin_Sans({
