@@ -9,5 +9,4 @@ export const notifications = [
     linkText: 'Click to download Flyer.',
     link: 'https://drive.google.com/file/d/1yH2-jxxbB6JI1zK8GRbHyC3ACbZRHbvU/view?usp=sharing',
   }
-	
 ];
