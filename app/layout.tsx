@@ -37,7 +37,7 @@ export default function RootLayout({
         )}
       >
         <main className="min-h-screen flex flex-col">
-          <header className="flex w-full items-center justify-start gap-52 py-5 container">
+          <header className="flex w-full items-center justify-start sm:gap-52 py-5 container gap-36">
             <Link href="/">
               <div className="inline-flex items-center space-x-5">
                 <Image
