@@ -33,7 +33,8 @@ const Notifications = () => {
 
 			{showTable && (
         <div className="mt-4 border border-gray-300 p-4">
-          <table className="w-full border-collapse border border-gray-400">
+				<div className="overflow x-auto">
+          <table className="min-w-full border-collapse border border-gray-400">
             <thead>
               <tr className="bg-gray-200">
                 <th className="border border-gray-400 px-4 py-2">Category</th>
@@ -54,6 +55,7 @@ const Notifications = () => {
               </tr>
             </tbody>
           </table>
+					</div>
         </div>
       )}	
 				</section>
