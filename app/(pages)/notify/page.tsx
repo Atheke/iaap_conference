@@ -18,11 +18,12 @@ const Notifications = () => {
 							</li>
             <li>Submission of abstract deadline has been extended to the 31st of December.</li>
 					<li>Please check{" "}
-					<Link href ="#" 					onClick={(e) => {
+					<Link href ="#" 					
+					className="text-blue-500"
+					onClick={(e) => {
 						e.preventDefault();
 						setShowTable(!showTable);
 					}}
-						className="text-blue-500"
 					>
 					here</Link>
 					{" "}for registration fees after the 24th of January 2025.
