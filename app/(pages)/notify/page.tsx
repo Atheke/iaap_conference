@@ -18,8 +18,9 @@ const Notifications = () => {
 							</li>
             <li>Submission of abstract deadline has been extended to the 31st of December.</li>
 					<li>Please check{" "}
-					<Link href ="#" 					
+					<Link 
 					className="text-blue-500"
+					href ="#" 					
 					onClick={(e) => {
 						e.preventDefault();
 						setShowTable(!showTable);
