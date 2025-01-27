@@ -39,7 +39,9 @@ const Navbar = () =>{
 							</span>
 
 							{/* Notification text in black */}
-							<Link href={'/notify'} className="font-semibold text-white sm:text-black">
+							<Link 
+							className="font-semibold text-white sm:text-black"
+							href={'/notify'}> 
 							Notification
 							</Link>
 						</div>
