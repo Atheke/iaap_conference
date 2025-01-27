@@ -26,7 +26,7 @@ export default function Home() {
         fill
       />
       <div className="sm:pd-1 md:pb-10 sm:pt-0">
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold sm:font-bold text-background">
+        <h1 className="text-3xl md:text-7xl lg:text-8xl font-extrabold sm:font-bold text-background">
           <span className="text-base sm:text-xl md:text-5xl lg:text-6xl">
             Welcome to
           </span>

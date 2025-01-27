@@ -32,35 +32,35 @@ const Notifications = () => {
           </ul>
 
 			{showTable && (
-        <div className="mt-4 border border-gray-300 p-4">
-				<div className="overflow x-auto">
-          <table className="min-w-full border-collapse border border-gray-400">
-            <thead>
-              <tr className="bg-gray-200">
-                <th className="border border-gray-400 px-4 py-2">Category</th>
-                <th className="border border-gray-400 px-4 py-2">IAAP Members</th>
-								<th className="border border-gray-400 px-4 py-2">Non IAAP Members</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="border border-gray-400 px-4 py-2">Faculty/Professional</td>
-                <td className="border border-gray-400 px-4 py-2">4500</td>
-								<td className="border border-gray-400 px-4 py-2">5500</td>
-              </tr>
-              <tr>
-                <td className="border border-gray-400 px-4 py-2">Students/Research Scholars</td>
-                <td className="border border-gray-400 px-4 py-2">3000</td>
-								<td className="border border-gray-400 px-4 py-2">3500</td>
-              </tr>
-            </tbody>
-          </table>
-					</div>
-        </div>
-      )}	
-				</section>
+          <div className="mt-4 p-4">
+            <div className="overflow-x-auto">
+              <table className="min-w-full border-collapse border border-gray-400">
+                <thead>
+                  <tr className="bg-gray-200">
+                    <th className="border border-gray-400 px-2 py-1 sm:px-4 sm:py-2 text-xs sm:text-sm">Category</th>
+                    <th className="border border-gray-400 px-2 py-1 sm:px-4 sm:py-2 text-xs sm:text-sm">IAAP Members</th>
+                    <th className="border border-gray-400 px-2 py-1 sm:px-4 sm:py-2 text-xs sm:text-sm">Non IAAP Members</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="border border-gray-400 px-2 py-1 sm:px-4 sm:py-2 text-xs sm:text-sm">Faculty/Professional</td>
+                    <td className="border border-gray-400 px-2 py-1 sm:px-4 sm:py-2 text-xs sm:text-sm">4500</td>
+                    <td className="border border-gray-400 px-2 py-1 sm:px-4 sm:py-2 text-xs sm:text-sm">5500</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-400 px-2 py-1 sm:px-4 sm:py-2 text-xs sm:text-sm">Students/Research Scholars</td>
+                    <td className="border border-gray-400 px-2 py-1 sm:px-4 sm:py-2 text-xs sm:text-sm">3000</td>
+                    <td className="border border-gray-400 px-2 py-1 sm:px-4 sm:py-2 text-xs sm:text-sm">3500</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        )}  
+      </section>
     </div>
   );
 };
- 
-export default Notifications;
+
+export default Notifications;	
