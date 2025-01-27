@@ -28,10 +28,20 @@ export default function navbar()
 						
 						<Link href={'/'} className="truncate font-semibold">Home</Link>
 						<Link href={'/about'} className="truncate font-semibold">About Us</Link>
-						<Link href={'/notify'} 
-						className="truncate font-semibold bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 bg-clip-text text-transparent animate-blink">Notification</Link>
+						<div className="relative inline-block">
+  {/* Blinking "NEW" badge on the top-right */}
+							<span className="absolute -top-2 -right-2 text-xs truncate font-semibold 
+								bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 bg-clip-text text-transparent animate-blink">
+									NEW
+							</span>
+
+							{/* Notification text in black */}
+							<Link href={'/notify'} className="font-semibold text-white sm:text-black">
+							Notification
+							</Link>
+						</div>
 	
-				</div>
+					</div>
       </nav>
 
 	 );
