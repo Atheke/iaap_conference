@@ -79,7 +79,7 @@ const Notifications = () => {
 							<li>Participants must present their posters as a flex banner</li>
 						</ul>
 						<div className="mt-2 ml-[4em]">
-							<div className="md:h-[140px] md:w-[80px] border border-blue-500">
+							<div className="h-[80px] w-[40px] md:h-[140px] md:w-[80px] border border-blue-500">
 								<div className="text-center">1m</div>
 								<div className="mt-6">2m</div>
 								<div></div>
