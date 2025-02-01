@@ -5,6 +5,8 @@ import Link from 'next/link';
 
 const Notifications = () => {
 	 const [showTable, setShowTable] = useState(false);
+	 const [showInstructions, setShowInstructions] = useState(false);
+
 
 	return (
     <div className="w-full sm:my-10 container">
@@ -28,7 +30,19 @@ const Notifications = () => {
 					>
 					here</Link>
 					{" "}for registration fees after the 24th of January 2025.
-</li>	
+</li>
+					<li> Click{" "}
+					<Link 
+					className="text-blue-500"
+					href ="#" 					
+					onClick={(e) => {
+						e.preventDefault();
+						setShowInstructions(!showInstructions); 
+					}}
+					>
+					here</Link>
+					{" "}to find the instructions for poster presentations.</li>	
+
           </ul>
 
 			{showTable && (
@@ -57,10 +71,27 @@ const Notifications = () => {
               </table>
             </div>
           </div>
-        )}  
+        )}
+				{showInstructions && (
+					<div className= "flex-col" >
+						<ul className = " px-[2em]">
+							<li>Poster dimensions: Max of 1m in width by 2m in height (portrait style)</li>
+							<li>Participants must present their posters as a flex banner</li>
+						</ul>
+						<div className="mt-2 ml-[4em]">
+							<div className="md:h-[140px] md:w-[80px] border border-blue-500">
+								<div className="text-center">1m</div>
+								<div className="mt-6">2m</div>
+								<div></div>
+							</div>
+						</div>
+					</div>
+				)}
       </section>
     </div>
   );
 };
+
+
 
 export default Notifications;	
