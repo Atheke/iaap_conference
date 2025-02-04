@@ -43,6 +43,8 @@ const Notifications = () => {
 					here</Link>
 					{" "}to find the instructions for poster presentations.</li>	
 
+						<li>Delegates may not apply for an ILP if you can provide your invitation proof (abstract acceptance + registration confirmation) provided that you enter and leave the state within the time period of the conference.</li>
+
           </ul>
 
 			{showTable && (
