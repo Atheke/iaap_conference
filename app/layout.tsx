@@ -10,6 +10,8 @@ import NotificationSection from '@/components/NotificationSection/NotificationSe
 import { notifications } from '@/components/NotificationSection/Notifications';
 import AwardSection from '../components/AwardSection/AwardSection';
 import { awards } from '../components/AwardSection/AwardSectionProps';
+import ScheduleHallSection from '../components/ScheduleHallSection/ScheduleHallSection';
+import { informations } from '../components/ScheduleHallSection/ScheduleHallSectionInfo';
 import Navbar from '../components/Navbar/Navbar';
 export { metadata };
 
@@ -54,6 +56,9 @@ export default function RootLayout({
           <div className="flex-1 flex flex-col items-center px-0">
             {children}
           </div>
+					<div>
+						<ScheduleHallSection informations={informations} />
+					</div>
           <div>
             <NotificationSection notifications={notifications} />
           </div>
