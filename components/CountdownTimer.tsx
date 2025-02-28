@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 
-const targetDate = new Date('2025-02-26T00:00:00Z'); // Define the target date and time in UTC
+const targetDate = new Date('2025-02-26T00:00:00Z'); // Target date in UTC
 
 const CountdownTimer: React.FC = () => {
   const [timeLeft, setTimeLeft] = useState(getTimeLeft());
@@ -9,6 +9,10 @@ const CountdownTimer: React.FC = () => {
   function getTimeLeft() {
     const now = new Date();
     const difference = targetDate.getTime() - now.getTime();
+
+    if (difference <= 0) {
+      return { days: 0, hours: 0, minutes: 0, seconds: 0 }; // Stop at 00:00:00:00
+    }
 
     const days = Math.floor(difference / (1000 * 60 * 60 * 24));
     const hours = Math.floor(
@@ -22,16 +26,21 @@ const CountdownTimer: React.FC = () => {
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setTimeLeft(getTimeLeft());
+      setTimeLeft((prevTime) => {
+        const newTime = getTimeLeft();
+        if (newTime.days === 0 && newTime.hours === 0 && newTime.minutes === 0 && newTime.seconds === 0) {
+          clearInterval(intervalId); // Stop timer when it reaches 00:00:00:00
+        }
+        return newTime;
+      });
     }, 1000);
 
-    // Cleanup interval on component unmount
-    return () => clearInterval(intervalId);
+    return () => clearInterval(intervalId); // Cleanup on unmount
   }, []);
 
   return (
     <div className="countdown-timer inline-flex gap-5 mx-auto border-2 border-primary px-5 sm:px-20 py-5 text-primary">
-      <DisplayDiv duration={timeLeft.days} durationType="Days(s)" />:
+      <DisplayDiv duration={timeLeft.days} durationType="Day(s)" />:
       <DisplayDiv duration={timeLeft.hours} durationType="Hour(s)" />:
       <DisplayDiv duration={timeLeft.minutes} durationType="Minute(s)" />:
       <DisplayDiv duration={timeLeft.seconds} durationType="Second(s)" />
@@ -49,3 +58,4 @@ const DisplayDiv = ({ duration, durationType }: any) => {
     </div>
   );
 };
+
