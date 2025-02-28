@@ -24,20 +24,19 @@ const CountdownTimer: React.FC = () => {
     return { days, hours, minutes, seconds };
   }
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setTimeLeft((prevTime) => {
-        const newTime = getTimeLeft();
-        if (newTime.days === 0 && newTime.hours === 0 && newTime.minutes === 0 && newTime.seconds === 0) {
-          clearInterval(intervalId); // Stop timer when it reaches 00:00:00:00
-        }
-        return newTime;
-      });
-    }, 1000);
+	useEffect(() => {
+		const intervalId = setInterval(() => {
+			const newTime = getTimeLeft();
+			setTimeLeft(newTime);
 
-    return () => clearInterval(intervalId); // Cleanup on unmount
-  }, []);
+			if (newTime.days === 0 && newTime.hours === 0 && newTime.minutes === 0 && newTime.seconds === 0) {
+				clearInterval(intervalId); // Stop timer when it reaches 00:00:00:00
+			}
+		}, 1000);
 
+		return () => clearInterval(intervalId); // Cleanup on unmount
+	}, []);
+ 
   return (
     <div className="countdown-timer inline-flex gap-5 mx-auto border-2 border-primary px-5 sm:px-20 py-5 text-primary">
       <DisplayDiv duration={timeLeft.days} durationType="Day(s)" />:
