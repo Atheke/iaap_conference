@@ -12,6 +12,9 @@ import AwardSection from '../components/AwardSection/AwardSection';
 import { awards } from '../components/AwardSection/AwardSectionProps';
 import ScheduleHallSection from '../components/ScheduleHallSection/ScheduleHallSection';
 import { informations } from '../components/ScheduleHallSection/ScheduleHallSectionInfo';
+import AchievementSection from '../components/AchievementSection/AchievementSection';
+import { achievements } from '../components/AchievementSection/Achievement';
+
 import Navbar from '../components/Navbar/Navbar';
 export { metadata };
 
@@ -62,9 +65,12 @@ export default function RootLayout({
           <div>
             <NotificationSection notifications={notifications} />
           </div>
+					<div>
+            <AchievementSection achievements={achievements} />
+          </div>
           <div>
             <AwardSection awards={awards} />
-          </div>
+          </div>	
           <Footer />
         </main>
       </body>
